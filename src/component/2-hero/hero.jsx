@@ -3,11 +3,12 @@ import './hero.css'
 import devAnimation from '../animation/dev.json'
 import Lottie from 'lottie-react'
 const Hero = () => {
+  const myImg = process.env.PUBLIC_URL + '/woman-icon-modified.png';
     return (
         <section className='hero d-flex container' id="about">
         <div className="left-sec">
           <div className="avatar d-flex">
-            <img src="./woman-icon-modified.png" alt="" className="d-inline" />
+            <img src={myImg} alt="" className="d-inline" />
             <h2 className=" ms-4" >Aya Ahmed </h2>
           </div>
           <div className='txt'>
