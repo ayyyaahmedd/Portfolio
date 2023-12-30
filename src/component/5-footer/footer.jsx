@@ -10,7 +10,7 @@ const Footer = () => {
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <p>© 2023. All rights reserved Aya Ahmed.</p>
+        <p>© 2023. All rights reserved to Aya Ahmed.</p>
         </footer>
     );
 }
