@@ -1,0 +1,103 @@
+nav ul.d-flex{
+    gap: 16px;
+}
+ ul li a{
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: bold;
+}
+header ul li a:hover{
+    color: var(--blue); 
+    opacity: 1;
+    /* font-size: 0.9rem; */
+}
+header{
+    padding: 0 2.4rem;
+    padding-top: 1.2rem;
+}
+header button{
+    font-size: 1.2rem;
+}
+nav ul{
+    margin:0;
+    padding: 0;
+}
+nav{
+    background-color: var(--bgHeader);
+    padding: 0.77rem 1.5rem;
+    border-radius: 55px;
+    box-shadow:  1px 1px 20px rgba(53, 51, 51, 0.363);
+}
+
+header button.menu{
+    display: none;
+}
+/* model */
+.menuDetails{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(70, 69, 69, 0.897);
+    backdrop-filter: blur(3px);
+}
+.menuDetails ul.model{
+    animation: move 0.7s 1;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+}
+@keyframes move{
+    0% {scale :0}
+    66% {scale :1.2}
+    100% {scale :1}
+}
+.menuDetails ul.model li{
+    border-bottom: 1px solid var(--border);
+    padding: 0.77rem 0;
+}
+.menuDetails ul.model li:last-child , .menuDetails ul.model li:first-child{
+    border-bottom: none;
+}
+.menuDetails ul.model li a{
+    font-size: 1rem;
+}
+/* icons */
+button.mode , .icon-menu{
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 192, 203, 0.388);
+    color: var(--subtitle);
+    transition: 0.2s;
+}
+button.mode:hover , .icon-menu:hover{
+    color: var(--title);
+    border: 1px solid rgba(255, 192, 203, 0.732);
+}
+.icon-close{
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+.icon-close:hover{
+    font-size: 1.7rem;
+    color: pink;
+    rotate: 180deg;
+}
+
+
+
+
+
+@media (max-width:700px){
+    nav{
+        display: none;
+    }
+    header button.menu{
+        display: block ;
+    }
+}

@@ -1,0 +1,103 @@
+section.main{
+    gap: 5rem;
+}
+
+/* left section for btn */
+.main-left-sec{
+    flex-direction: column;
+    gap: 10px;
+}
+.main-left-sec button{
+    background-color: rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: 0.8rem 0;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.main-left-sec .active{
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding: 0.8rem 0;
+    border: 1px solid var(--blue);
+}
+.main-left-sec button:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+
+
+/* right section for projects */
+.main .main-right-sec{
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.car1d{
+    border: 1px solid rgba(155, 104, 113, 0.636);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.car1d:hover{
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    scale:1.01
+}
+.car1d img{
+    border-radius: 5px 5px 0 0;
+}
+.card-detail{
+    padding: 1rem 0.5rem;
+}
+.card-detail h2{
+    color: var(--title);
+}
+.card-detail p{
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+}
+.card-icon div a{
+font-size: 1.2rem;
+color: var(--subtitle);
+}
+.card-icon div a:hover{
+    scale: 1.1;
+    color: var(--blue);
+}
+.card-more{
+    font-size: 1rem;
+    color: var(--blue);
+}
+.card-more span{
+    font-size: 0.8rem;
+}
+
+
+/* media query */
+
+@media (max-width: 600px){
+    section.main{
+        flex-direction: column;
+        gap: 2.6rem;
+        align-items: center;
+    }
+    .main-left-sec{
+        flex-direction: row;
+        gap:10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-left-sec button{
+        padding: 0.8rem 0;
+        width: 7rem;
+        font-size: 0.8rem;
+
+    }
+}
